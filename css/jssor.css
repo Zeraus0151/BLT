@@ -1,0 +1,26 @@
+/*jssor slider loading skin double-tail-spin css*/
+        .jssorl-004-double-tail-spin img {
+            animation-name: jssorl-004-double-tail-spin;
+            animation-duration: 1.6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes jssorl-004-double-tail-spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /*jssor slider bullet skin 052 css*/
+        .jssorb052 .i {position:absolute;cursor:pointer;}
+        .jssorb052 .i .b {fill:#000;fill-opacity:0.3;}
+        .jssorb052 .i:hover .b {fill-opacity:.7;}
+        .jssorb052 .iav .b {fill-opacity: 1;}
+        .jssorb052 .i.idn {opacity:.3;}
+
+        /*jssor slider arrow skin 074 css*/
+        .jssora074 {display:block;position:absolute;cursor:pointer;}
+        .jssora074 .a {fill:#333;fill-opacity:.7;stroke:#fff;stroke-width:160;stroke-miterlimit:10;stroke-opacity:.7;}
+        .jssora074:hover {opacity:.8;}
+        .jssora074.jssora074dn {opacity:.4;}
+        .jssora074.jssora074ds {opacity:.3;pointer-events:none;}

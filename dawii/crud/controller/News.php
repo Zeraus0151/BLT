@@ -18,10 +18,11 @@ class News extends Controller {
     public function __construct() {
         parent::__construct();
         $this->model = new NoticiaDAO();
+		//var_dump($id);
     }
 
     public function index($id) {
-		var_dump($id);die;
+		//var_dump($id);die;
         //$data['listNews'] = $this->model->getListNoticias();
 		$this->model = new NoticiaDAO();
 		$data['news']=$this->model->getNoticiaById($id);
@@ -33,4 +34,5 @@ class News extends Controller {
         $this->view->load("nav");
         $this->view->load("news", $data);
     }
+
 }

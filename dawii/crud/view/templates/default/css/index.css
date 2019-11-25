@@ -1,0 +1,272 @@
+body{}
+li{
+	text-decoration:none;
+	list-style-type: none;
+}
+nav{
+	background-color:#4089FF;
+	width:100%;
+	height:60px;
+}
+nav ul li{
+	display:inline-block;
+	padding:17px 50px;
+}
+nav ul li a{
+	text-decoration:none;
+	color:white;
+	size:20px;
+}
+nav ul li a:hover{
+	font-weight:bold;
+	text-decoration:none;
+	color:white;
+}
+#img-nav{
+	width:40px;
+}
+#div-half-left{
+	width:50%;
+	height:700px;
+	float:left;
+}
+#div-half-left img{
+	margin-top:60px;
+	height:470px;
+}
+#div-half-right{
+	width:50%;
+	height:700px;
+	float:left;
+}
+#div-half-right h1{
+	font-size:40px;
+}
+#div-half-right a{
+	background-color:rgba(64,137,255,0.8);
+	border:1px;
+	border-radius:5px;
+	padding:7px;
+	color:white;
+	margin-left:30px;
+	margin-top:30px;
+	
+}
+#div-half-right a:hover{
+	background-color:#4089ff;
+	border:1px solid #4089ff;
+	text-decoration:none;
+	font-weight:bold;
+	box-shadow: 0px 0px 5px 0px grey;
+}
+#p-div-half{
+	padding-left:30px;
+	padding-bottom:0px;
+	padding-top:50px;
+	font-size:25px;
+}
+.p2-div-half{
+	padding-left:30px;
+	padding-bottom:20px;
+	padding-top:30px;
+	padding-right:40px;
+	font-size:20px;
+	text-decoration:none;
+	color:black;
+	text-justify:justify;
+}
+#div-game{
+	width:100%;
+	height:720px;
+	background-color:black;
+	float:left;
+}
+.foto-news{
+	width:60%;
+	height:100%;
+	background-color:;
+	float:left;
+}
+.items-news{
+	float:right;
+	width:40%;
+	padding-left:10px;
+}
+.item-news-h1{
+	font-size:30px;
+	color:rgba(65,137,255,0.7);
+	margin-top:10px;
+}
+.item-news-p{
+	font-size:20px;
+	margin-right:20px;
+	margin-top:10px;
+	margin-bottom:43px;
+	text-align:justify;
+}
+
+.item-news-h1:hover{
+	font-size:31px;
+	color:rgba(65,137,255,1);
+	text-decoration:none;
+}
+.news-bottom{
+	width:100%;
+	border: 1px solid #CECECE;
+	border-radius:7px;
+	height:337px;
+	margin-bottom:30px;
+}
+.news-link{
+	display:block;
+	color:white;
+	background-color:rgba(65,137,255,0.8);
+	border: 1px solid;
+	padding:10px;
+	border-radius:7px;
+	font-size:16px;
+	margin-left:12px;
+	margin-top:-35px;
+	width:125px;
+}
+.news-link:hover{
+	color:white;
+	background-color:rgba(65,137,255,1);
+	text-decoration:none;
+}
+#section-footer{
+	margin-top:50px;
+	width:100%;
+}
+.footer{
+	color:white;
+	background-color:#333333;
+}
+.title-footer{
+	padding: 30px 0px 15px 30px;
+}
+.content-footer li{
+	list-style-type: none;
+	font-weight: bold;
+}
+.footer{
+	height:300px;
+	background-color:#333333;
+}
+.list-style-footer ul li{
+	padding:10px 20px;
+}
+.list-style-footer ul li a{
+	text-decoration:none;
+	color:white;
+	size:20px;
+}
+.list-style-footer ul li a:hover{
+	font-weight:bold;
+	color:white;
+}	
+.content-footer a{
+	text-decoration:none;
+	font-weight: bold;
+	color:white;
+}
+.content-footer a:hover{
+	text-decoration:none;
+	color:white;
+	font-size:16px;
+}
+.div-contato-footer{
+	margin-left: 30px;
+}
+.p-contato-footer{
+	font-weight:bold;
+	margin-left:20px;
+}
+.p2-contato-footer{
+	padding-left:30px;
+}
+.list-style-footer{
+	float:left;
+	margin-right:5px;
+}
+#news-title{
+	position:absolute;
+	margin:500px 0px 0px 15%;
+	text-align:center;
+	color:white;
+}
+#news-title h3{
+	font-size:30px;
+}
+#news-title p{
+	font-size:16px;
+}
+#content-news{
+	padding-top:40px;
+	display:block;
+	width:50%;
+	margin:0 auto;
+	
+}
+#content-news p{
+	color:grey;
+	font-size:16px;
+	text-align:justify;
+	padding-bottom:10px;
+}
+#content-news a{
+	color:white;
+	font-size:16px;
+	background-color:rgba(67,137,255,0.8);
+	padding:7px 5px;
+	border:1px;
+	border-radius:3px;
+	display:block;
+	margin-top:10px;
+	width:52px;
+}
+#content-news a:hover{
+	text-decoration:none;
+	font-weight:bold;
+	width:54px;
+	box-shadow: 0px 0px 5px 0px grey;
+}
+#carro-top{
+	height:50px;
+	background-color:white;
+}
+#carro-top div{
+	float:left;
+	padding-top:16px;
+}
+#carro-bottom{
+	border-top:2px solid #4089ff;
+	padding-top:15px;
+	height:132px;
+	border-bottom:2px solid #4089ff;
+	margin-bottom:-2px;
+	background-color:white;
+}
+#carro-bottom div{
+	padding-top:40px;
+}
+#carro-bottom div:first-child{
+	padding-top:0px;
+}
+#enviar-carro{
+	background-color:;
+	border:4px solid;
+	border-radius:15px;
+	font-size:16px;
+	padding:7px;
+	margin-top:20px;
+	display:block;
+	width:102px;
+	margin-bottom:30px;
+}
+#enviar-carro:hover{
+	background-color:#4089ff;
+	border:4px solid;
+	color:white;
+	text-decoration:none;
+}

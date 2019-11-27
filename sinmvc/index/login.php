@@ -74,7 +74,7 @@
 				<h3 style="margin:0 auto;text-align:center;padding-bottom:30px;">Entrar Cuenta</h3>
 				<form method="POST" action="login-ok.php">
 					<label for="email">E-mail</label>
-					<input type="email" name="text" class="a" placeholder="Digite su E-mail.." required>
+					<input type="text" name="text" class="a" placeholder="Digite su E-mail.." required>
 					
 					<label for="tel">Contraseña</label>
 					<input type="password" name="pass" class="a" placeholder="Digite su Contraseña..">

@@ -11,7 +11,7 @@
 		//var_dump($_SESSION['count_cookie']);
 	}else{
 		echo"no fnca sesion";
-		die;
+		//die;
 	}
 ?><html>
 	<head>

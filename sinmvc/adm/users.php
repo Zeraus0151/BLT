@@ -80,7 +80,7 @@
 				<div class="col-sm-2" style="float:left;paddin-left:10px;color:white;padding-top:11px;font-size:20px;">Nombre</div>
 				<div class="col-sm-2" style="float:left;paddin-left:10px;color:white;padding-top:11px;font-size:20px;">saldo</div>
 				<div class="col-sm-2" style="float:left;paddin-left:10px;color:white;padding-top:11px;font-size:20px;">Estado Cuenta</div>
-				<div class="col-sm-2" style="float:left;paddin-left:10px;color:white;padding-top:11px;font-size:20px;">Foto</div>
+				<div class="col-sm-2" style="float:left;paddin-left:10px;color:white;padding-top:11px;font-size:20px;">Acción</div>
 			</div>
 			<?php
 				include'usuarioDao.php';

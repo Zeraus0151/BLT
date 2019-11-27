@@ -25,10 +25,10 @@ class usuarioDao{
 				$t->setestado($resultado["estado"]);
 				$t->setpass($resultado["pass"]);
 				$t->setsobre($resultado["sobremi"]);
-				$result[]=$t
+				$result[]=$t;
 			}
 			return $result;
-			}
+		}
 		public function mostrar(){
 			$conn = mysqli_connect("localhost","root","","dawii");
 			$sql = "SELECT * FROM usuarios ";
@@ -46,11 +46,16 @@ class usuarioDao{
 							<div class='col-sm-2'style='float:left;paddin-left:10px;color:grey;padding-top:11px;font-size:20px;'>".$row["nombre"]."</div>
 							<div class='col-sm-2' style='float:left;paddin-left:10px;color:grey;padding-top:11px;font-size:20px;'>".$row["saldo"]."</div>
 							<div class='col-sm-2' style='float:left;paddin-left:10px;color:grey;padding-top:11px;font-size:20px;'>".$row["estado"]."</div>
-							<div class='col-sm-1' style='float:left;paddin-left:10px;color:grey;padding-top:11px;font-size:20px;'>1.png</div>
-							<div class='col-sm-1' style='float:left;paddin-left:10px;color:grey;padding-top:11px;font-size:20px;'><a href=''>X</a><a href=editarUsers.php?id=".$row["idusuarios"].">Editar</a></div></div>";
+							<div class='col-sm-2' style='float:left;paddin-left:10px;color:grey;padding-top:11px;font-size:20px;'><a href='eliminarUsers.php?id=".$row["idusuarios"]."'>X</a><a href=editarUsers.php?id=".$row["idusuarios"].">Editar</a></div></div>";
 				}
 			} else {
 				echo "0 results";
 			}
+		}
+		public function eliminar($id){
+			$conn = mysqli_connect("localhost","root","","dawii");
+			$sql = "DELETE FROM usuarios WHERE idusuarios='$id';";
+			$result = mysqli_query( $conn, $sql) or die ('Unable to execute query. '.mysqli_error($conn));
+			header("location:users.php");
 		}
 }

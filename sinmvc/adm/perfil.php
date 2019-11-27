@@ -9,11 +9,12 @@
 		echo"FAVOR LOGAR";
 	}
 	$sesion = $_SESSION['id_user'];
+	//var_dump($sesion);die;
 	if($_POST){
 		$nombre=$_POST['nombre'];
 		$pass=$_POST['pass'];		
 		$pass2=$_POST['pass2'];	
-		if($pass && $pass2)
+		if($pass && $pass2 && $pass==$pass2)
 		{
 			$selecciona=new usuarioDao;
 			$selecciona->inserirAdm($nombre,$pass,$sesion);
@@ -26,8 +27,6 @@
 	$result = mysqli_query( $conn, $sql) or die ('Unable to execute query. '.mysqli_error($conn));
 	if ($result->num_rows > 0) {
 		while($row = $result->fetch_assoc()) {
-			
-	
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -145,7 +144,7 @@
 					<p style="display:block;width:50%;"><span>Estado Cuenta: </span><?php echo $row["estado"];?></p>
 					<div style="width:30%;float:right;font-weight:bold;font-size:16px;padding:10px;display:block;margin-top:-60px;">
 						<p>Eliminar</p>
-						<a href="" id="eliminar">Eliminar</a>
+						<a href="eliminarUsers.php?id=<?php echo $row["idusuarios"];?>" id="eliminar">Eliminar</a>
 					</div>
 					<h3 style="margin-top:-5px;margin-bottom:-5px;">Acciones</h3>
 					<div style="width:50%;float:left;font-weight:bold;font-size:16px;padding:10px;">
@@ -162,7 +161,7 @@
 			<div style="background-color:white;width:50%;height:100%;margin-left:-20px;float:left;border:0px solid;border-radius:5px;z-index:-1;position:relative;">
 				<img src="images/view.jpg" width="100%" height="250px" style="border:0px solid;border-radius:5px 5px 0px 0px;">
 				<img src="images/me-dijiste-meme-gato-09.jpg" style="border:0px solid;border-radius:50%;height:200px;width:200px;display:block;margin:auto;margin-top:-75px;box-shadow:3px 3px 6px 0px #383838;">
-				<p id="nombre">Richard Suarez</p>
+				<p id="nombre"><?php echo $row["nombre"];?></p>
 				<p id="profesion">Manager</p>
 			</div>
 		</div>

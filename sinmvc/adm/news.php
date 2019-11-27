@@ -75,9 +75,8 @@
 			<p style="font-size:30px;margin:30px;">Noticias</p>
 			<a href="agregarNews.php" class="edit-button" style="">Agregar</a>
 			<div style="background-color:#333;height:50px;border-radius:10px 10px 0px 0px;">
-				<div class="col-sm-3" style="float:left;paddin-left:10px;color:white;padding-top:11px;font-size:20px;">Fecha Creación</div>
-				<div class="col-sm-3" style="float:left;paddin-left:10px;color:white;padding-top:11px;font-size:20px;">Titulo</div>
-				<div class="col-sm-3" style="float:left;paddin-left:10px;color:white;padding-top:11px;font-size:20px;">Imagen</div>
+				<div class="col-sm-4" style="float:left;paddin-left:10px;color:white;padding-top:11px;font-size:20px;">Fecha Creación</div>
+				<div class="col-sm-4" style="float:left;paddin-left:10px;color:white;padding-top:11px;font-size:20px;">Titulo</div>
 				<div class="col-sm-3" style="float:left;paddin-left:10px;color:white;padding-top:11px;font-size:20px;">Descripción</div>
 			</div>
 			<?php

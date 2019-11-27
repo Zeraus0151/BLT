@@ -14,9 +14,8 @@
 		$fecha_creacion=$_POST['fecha'];
 		$descripcion=$_POST['descripcion'];		
 		$nombre=$_POST['nombre'];		
-		$noticias_idnoticias=$_POST['noticias_idnoticias'];		
 		$conn = mysqli_connect("localhost","root","","dawii");
-		$sql = "UPDATE imagenes SET fecha_creacion = '$fecha_creacion',descripcionn = '$descripcion',nombre = '$nombre',noticias_idnoticias= '$noticias_idnoticias' WHERE idimagenes = $idImagen";
+		$sql = "UPDATE imagenes SET fecha_creacion = '$fecha_creacion',descripcionn = '$descripcion',nombre = '$nombre' WHERE idimagenes = $idImagen";
 		mysqli_query( $conn, $sql) or die ('Unable to execute query. '.mysqli_error($conn));
 	}
 	$conn = mysqli_connect("localhost","root","","dawii");
@@ -108,10 +107,6 @@
                         <div class="">
 							<p style="margin:10px;">Nombre</p>
                             <input type="text" name="nombre" placeholder="" value="<?php echo $row['nombre'];?>" class="form-control">
-                        </div>
-						<div class="">
-							<p style="margin:10px;">Id_Noticia</p>
-                            <input type="text" name="noticias_idnoticias" placeholder="" value="<?php echo $row['noticias_idnoticias'];?>" class="form-control">
                         </div>
 						<div>
                             <input type="submit" value="Enviar" style="background-color:rgba(64,137,255,1);color:white;padding:5px;margin-top:5px;border:1px;border-radius:2px;">

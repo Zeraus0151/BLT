@@ -14,9 +14,8 @@
 		$fecha_creacion=$_POST['fecha'];
 		$descripcion=$_POST['descripcion'];
 		$nombre=$_POST['nombre'];	
-		$noticias_idnoticias=$_POST['noticias_idnoticias'];	
 		$selecciona=new imagenDao;
-		$selecciona->inserir($fecha_creacion,$descripcion,$nombre,$noticias_idnoticias);
+		$selecciona->inserir($fecha_creacion,$descripcion,$nombre);
 	}
 ?>
 <!DOCTYPE html>
@@ -100,10 +99,6 @@
 							<div class="">
 								<p style="margin:10px;">Nombre</p>
 								<input type="text" name="nombre" placeholder="" value="" class="form-control">
-							</div>
-							<div class="">
-								<p style="margin:10px;">idNoticia</p>
-								<input type="text" name="noticias_idnoticias" placeholder="" value="" class="form-control">
 							</div>
 							<div>
 								<input type="submit" value="Enviar" style="background-color:rgba(64,137,255,1);color:white;padding:5px;margin-top:5px;border:1px;border-radius:2px;">
